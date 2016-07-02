@@ -43,7 +43,7 @@ class Cards(models.Model):
     card_created = models.DateTimeField(
         default=timezone.now)
 
-    def __unicode__(self):
+    def __str__(self):
         """Unicode Method to Display Relevent data in Admin."""
         return self.card_title
 
